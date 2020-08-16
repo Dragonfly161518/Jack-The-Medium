@@ -1,0 +1,23 @@
+{
+  "name": "Jack The Medium",
+  "version": "1.0",
+  "description": "Jacking is No Good",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["tabs", "storage", "declarativeContent"],
+  "icons": {
+    "128": "jack.png"
+  },
+  "commands": {
+    "jack-it": {
+      "suggested_key": {
+        "default": "Alt+J",
+        "mac": "Alt+J"
+      },
+      "description": "Jack it"
+    }
+  },
+  "manifest_version": 2
+}
