@@ -24,9 +24,7 @@ chrome.commands.onCommand.addListener((command, tab) => {
       populate: true,
     };
     chrome.windows.getAll(getInfo, (windows) => {
-      console.log(windows);
       windows = windows.filter((window) => window.incognito);
-      console.log(windows);
       if (windows.length > 0) {
         const windowId = windows[0].id;
         const createProperties = {
