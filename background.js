@@ -33,7 +33,7 @@ chrome.commands.onCommand.addListener((command, tab) => {
           active: true,
         };
         chrome.tabs.create(createProperties, (tab) => {
-          console.log("create new " + tab.url + " tab in window: " + windowId);
+          //
         });
       } else {
         const createData = {
@@ -42,7 +42,7 @@ chrome.commands.onCommand.addListener((command, tab) => {
           focused: true,
         };
         chrome.windows.create(createData, (window) => {
-          console.log("create new window with " + newTabUrl + " tab");
+          //
         });
       }
     });
